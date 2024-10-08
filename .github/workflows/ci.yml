@@ -3,11 +3,7 @@ on:
   push:
     branches:
       - master 
-<<<<<<< HEAD
       - main
-=======
-      - new
->>>>>>> main
 permissions:
   contents: write
 jobs:
@@ -24,8 +20,4 @@ jobs:
           path: .cache
       - run: pip install mkdocs-material
       - run: pip install pillow cairosvg
-<<<<<<< HEAD
       - run: mkdocs gh-deploy --force
-=======
-      - run: mkdocs gh-deploy --force
->>>>>>> main
