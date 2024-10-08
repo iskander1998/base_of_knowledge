@@ -1,0 +1,826 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Iskander">
+      
+      
+        <link rel="canonical" href="https://example12.github.io/mkdocs-demo-site/%D0%9E%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B8%20%D1%80%D0%B5%D0%BB%D0%B8%D0%B7%D1%8B/">
+      
+      
+        <link rel="prev" href="../%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B8%20%D0%BF%D0%BE%20%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B5/">
+      
+      
+        <link rel="next" href="../%D0%9E%D0%BF%D1%82%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%20%D0%BF%D0%BE%D0%B8%D1%81%D0%BA%D0%B0/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.39">
+    
+    
+      
+        <title>4. Аналитика - etogeek MkDocs demo</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.8c3ca2c6.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#4" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="etogeek MkDocs demo" class="md-header__button md-logo" aria-label="etogeek MkDocs demo" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            etogeek MkDocs demo
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              4. Аналитика
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="etogeek MkDocs demo" class="md-nav__button md-logo" aria-label="etogeek MkDocs demo" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    etogeek MkDocs demo
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../0210/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    0210
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../30.09%20gen/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    30.09 generation draft example
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%92%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D1%8B%20%D0%BF%D0%BE%20API/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1. Введение
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%94%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B8%20%D1%80%D0%B5%D1%81%D1%83%D1%80%D1%81%D1%8B/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2. Интеграция
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B8%20%D0%BF%D0%BE%20%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3. Поиск и отображение товаров
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    4. Аналитика
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    4. Аналитика
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Инструменты аналитики
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Инструменты аналитики">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Интеграция с Яндекс Метрикой
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Сбор данных о поисковых запросах
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Отчетность
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Отчетность">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Еженедельные отчеты
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Индивидуальные отчеты
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Часто задаваемые вопросы
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Часто задаваемые вопросы">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-searchbooster" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Как интегрировать Яндекс Метрику с SearchBooster?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Какие данные можно собирать с помощью аналитики?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Как часто следует проверять отчеты по поиску?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Как создать индивидуальный отчет?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Как анализировать нулевые запросы?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Как улучшить качество поиска на основе аналитики?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Как часто обновляются данные в Яндекс Метрике?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9E%D0%BF%D1%82%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%20%D0%BF%D0%BE%D0%B8%D1%81%D0%BA%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Часто задаваемые вопросы (FAQ) по продукту SearchBooster
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Инструменты аналитики
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Инструменты аналитики">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Интеграция с Яндекс Метрикой
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Сбор данных о поисковых запросах
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Отчетность
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Отчетность">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Еженедельные отчеты
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Индивидуальные отчеты
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Часто задаваемые вопросы
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Часто задаваемые вопросы">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-searchbooster" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Как интегрировать Яндекс Метрику с SearchBooster?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Какие данные можно собирать с помощью аналитики?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Как часто следует проверять отчеты по поиску?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Как создать индивидуальный отчет?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Как анализировать нулевые запросы?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Как улучшить качество поиска на основе аналитики?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Как часто обновляются данные в Яндекс Метрике?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="4">4. Аналитика</h1>
+<h2 id="_1">Инструменты аналитики</h2>
+<p>Аналитика является важной частью работы с системой SearchBooster, так как она позволяет отслеживать эффективность поиска и поведение пользователей. Правильное использование аналитических инструментов помогает выявить проблемы, оптимизировать настройки и улучшить пользовательский опыт.</p>
+<h3 id="1">1. Интеграция с Яндекс Метрикой</h3>
+<p>SearchBooster предоставляет возможность интеграции с Яндекс Метрикой, что позволяет собирать данные о поведении пользователей на сайте. Для этого необходимо:</p>
+<ul>
+<li>
+<p><strong>Создать счетчик в Яндекс Метрике</strong>: Зарегистрируйтесь в Яндекс Метрике и создайте новый счетчик для вашего сайта. Сохраните идентификатор счетчика, так как он понадобится для настройки.</p>
+</li>
+<li>
+<p><strong>Настроить передачу данных</strong>: В админ-панели SearchBooster перейдите в раздел "Настройка событий" и укажите номер вашего счетчика. Вы можете выбрать опцию автоматического определения счетчика или ввести его вручную.</p>
+</li>
+<li>
+<p><strong>Отправка событий</strong>: SearchBooster автоматически отправляет события, такие как инициализация кода виджета и клики на товары. Вы также можете настроить дополнительные события, такие как добавление товара в корзину или открытие окна поиска.</p>
+</li>
+</ul>
+<h3 id="2">2. Сбор данных о поисковых запросах</h3>
+<p>SearchBooster позволяет собирать данные о поисковых запросах, что помогает анализировать, какие товары ищут пользователи, и как они взаимодействуют с результатами поиска. Для этого:</p>
+<ul>
+<li>
+<p><strong>Используйте API для получения данных</strong>: Вы можете использовать API для получения статистики по поисковым запросам, включая количество запросов, популярные товары и другие метрики.</p>
+</li>
+<li>
+<p><strong>Анализируйте поведение пользователей</strong>: С помощью собранных данных вы можете выявить, какие запросы приводят к конверсиям, а какие – к нулевым результатам. Это поможет вам оптимизировать настройки поиска и улучшить выдачу.</p>
+</li>
+</ul>
+<h2 id="_2">Отчетность</h2>
+<p>Регулярная отчетность по качеству поиска и его эффективности позволяет вам отслеживать изменения и принимать обоснованные решения. SearchBooster предлагает несколько способов подготовки отчетов:</p>
+<h3 id="1_1">1. Еженедельные отчеты</h3>
+<p>Вы можете настроить автоматическую отправку еженедельных отчетов, которые будут содержать информацию о:</p>
+<ul>
+<li>
+<p><strong>Статистике поиска</strong>: Количество поисковых запросов, популярные товары, среднее время поиска и другие метрики.</p>
+</li>
+<li>
+<p><strong>Качестве выдачи</strong>: Точность выдачи, количество нулевых запросов и другие показатели, которые помогут вам понять, насколько эффективно работает поиск.</p>
+</li>
+<li>
+<p><strong>Проверке фида</strong>: Результаты проверки фида и настроек проекта, включая доступность фида, наличие товаров и корректность передачи данных.</p>
+</li>
+</ul>
+<h3 id="2_1">2. Индивидуальные отчеты</h3>
+<p>Вы также можете создавать индивидуальные отчеты по запросу. Для этого:</p>
+<ul>
+<li>
+<p><strong>Определите ключевые метрики</strong>: Выберите метрики, которые вас интересуют, такие как конверсии, популярные запросы или поведение пользователей.</p>
+</li>
+<li>
+<p><strong>Используйте инструменты аналитики</strong>: С помощью инструментов аналитики, таких как Яндекс Метрика, вы можете визуализировать данные и создавать графики для лучшего понимания результатов.</p>
+</li>
+<li>
+<p><strong>Анализируйте данные</strong>: Регулярно анализируйте отчеты и принимайте меры по оптимизации поиска на основе полученных данных.</p>
+</li>
+</ul>
+<h2 id="_3">Часто задаваемые вопросы</h2>
+<h3 id="1-searchbooster">1. Как интегрировать Яндекс Метрику с SearchBooster?</h3>
+<p>Для интеграции создайте счетчик в Яндекс Метрике, затем в админ-панели SearchBooster укажите номер счетчика в разделе "Настройка событий". Это позволит автоматически отправлять данные о событиях.</p>
+<h3 id="2_2">2. Какие данные можно собирать с помощью аналитики?</h3>
+<p>С помощью аналитики вы можете собирать данные о поисковых запросах, поведении пользователей, количестве конверсий, популярности товаров и качестве выдачи.</p>
+<h3 id="3">3. Как часто следует проверять отчеты по поиску?</h3>
+<p>Рекомендуется проверять отчеты по поиску еженедельно, чтобы отслеживать изменения и принимать меры по оптимизации поиска на основе полученных данных.</p>
+<h3 id="4_1">4. Как создать индивидуальный отчет?</h3>
+<p>Для создания индивидуального отчета определите ключевые метрики, которые вас интересуют, и используйте инструменты аналитики для визуализации данных и создания графиков.</p>
+<h3 id="5">5. Как анализировать нулевые запросы?</h3>
+<p>Анализируйте нулевые запросы, чтобы понять, какие товары или категории не отображаются в результатах поиска. Это поможет вам оптимизировать настройки и улучшить выдачу.</p>
+<h3 id="6">6. Как улучшить качество поиска на основе аналитики?</h3>
+<p>Используйте данные аналитики для выявления проблемных областей, таких как нулевые запросы или низкая конверсия, и принимайте меры по оптимизации поиска, включая настройку фильтров и ранжирования.</p>
+<h3 id="7">7. Как часто обновляются данные в Яндекс Метрике?</h3>
+<p>Данные в Яндекс Метрике обновляются в реальном времени, что позволяет вам отслеживать поведение пользователей и эффективность поиска на протяжении всего времени.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Iskander, V, 2024
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.525ec568.min.js"></script>
+      
+    
+  </body>
+</html>

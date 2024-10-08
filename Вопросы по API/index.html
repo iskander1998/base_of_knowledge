@@ -1,0 +1,700 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Iskander">
+      
+      
+        <link rel="canonical" href="https://example12.github.io/mkdocs-demo-site/%D0%92%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D1%8B%20%D0%BF%D0%BE%20API/">
+      
+      
+        <link rel="prev" href="../30.09%20gen/">
+      
+      
+        <link rel="next" href="../%D0%94%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B8%20%D1%80%D0%B5%D1%81%D1%83%D1%80%D1%81%D1%8B/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.39">
+    
+    
+      
+        <title>1. Введение - etogeek MkDocs demo</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.8c3ca2c6.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="etogeek MkDocs demo" class="md-header__button md-logo" aria-label="etogeek MkDocs demo" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            etogeek MkDocs demo
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              1. Введение
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="etogeek MkDocs demo" class="md-nav__button md-logo" aria-label="etogeek MkDocs demo" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    etogeek MkDocs demo
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../0210/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    0210
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../30.09%20gen/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    30.09 generation draft example
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    1. Введение
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    1. Введение
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Описание сервиса
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Цели использования
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Часто задаваемые вопросы
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Часто задаваемые вопросы">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-searchbooster" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Как работает SearchBooster?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-searchbooster" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Какие типы запросов поддерживает SearchBooster?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-searchbooster-" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Как можно интегрировать SearchBooster в мой интернет-магазин?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-searchbooster" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Как я могу настроить фильтры и сортировку в SearchBooster?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Как я могу анализировать эффективность поиска в моем магазине?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-searchbooster" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Как часто обновляется база данных товаров в SearchBooster?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-searchbooster" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Что делать, если я столкнулся с проблемами при использовании SearchBooster?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%94%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B8%20%D1%80%D0%B5%D1%81%D1%83%D1%80%D1%81%D1%8B/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2. Интеграция
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B8%20%D0%BF%D0%BE%20%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3. Поиск и отображение товаров
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9E%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B8%20%D1%80%D0%B5%D0%BB%D0%B8%D0%B7%D1%8B/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4. Аналитика
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9E%D0%BF%D1%82%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%20%D0%BF%D0%BE%D0%B8%D1%81%D0%BA%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Часто задаваемые вопросы (FAQ) по продукту SearchBooster
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Описание сервиса
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Цели использования
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Часто задаваемые вопросы
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Часто задаваемые вопросы">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-searchbooster" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Как работает SearchBooster?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-searchbooster" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Какие типы запросов поддерживает SearchBooster?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-searchbooster-" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Как можно интегрировать SearchBooster в мой интернет-магазин?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-searchbooster" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Как я могу настроить фильтры и сортировку в SearchBooster?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Как я могу анализировать эффективность поиска в моем магазине?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-searchbooster" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Как часто обновляется база данных товаров в SearchBooster?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-searchbooster" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Что делать, если я столкнулся с проблемами при использовании SearchBooster?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="1">1. Введение</h1>
+<h2 id="_1">Описание сервиса</h2>
+<p>SearchBooster – это современное решение для e-commerce, предоставляющее мощный инструмент поиска, который обеспечивает высокую релевантность результатов. Система разработана с использованием передовых технологий, включая машинное обучение и искусственный интеллект, что позволяет эффективно обрабатывать запросы пользователей и выдавать наиболее подходящие товары.</p>
+<p>Основная задача SearchBooster – улучшить пользовательский опыт, предоставляя клиентам возможность быстро и легко находить нужные товары. Система поддерживает различные форматы запросов, включая текстовые, голосовые и визуальные, что делает поиск более интуитивным и доступным для пользователей.</p>
+<p>SearchBooster интегрируется с различными платформами и CMS, что позволяет легко внедрять его в существующие интернет-магазины. Система также предлагает гибкие настройки, позволяя пользователям адаптировать поиск под свои нужды и предпочтения.</p>
+<h2 id="_2">Цели использования</h2>
+<p>Основные цели использования SearchBooster включают:</p>
+<ol>
+<li>
+<p><strong>Оптимизация поисковых запросов</strong>: Система позволяет улучшить качество поиска, минимизируя количество нулевых запросов и повышая точность выдачи. Это достигается за счет использования алгоритмов, которые учитывают текстовую релевантность, популярность товаров и другие параметры.</p>
+</li>
+<li>
+<p><strong>Улучшение пользовательского опыта</strong>: SearchBooster предлагает пользователям удобный интерфейс и интуитивно понятные функции, такие как автозаполнение, фильтры и сортировка. Это позволяет клиентам быстро находить нужные товары и повышает вероятность покупки.</p>
+</li>
+<li>
+<p><strong>Анализ и отчетность</strong>: Система предоставляет инструменты для анализа поведения пользователей и эффективности поиска. Это позволяет владельцам магазинов принимать обоснованные решения на основе данных и улучшать свои предложения.</p>
+</li>
+<li>
+<p><strong>Интеграция с другими сервисами</strong>: SearchBooster легко интегрируется с различными платформами и API, что позволяет расширять функциональность и улучшать взаимодействие с клиентами.</p>
+</li>
+<li>
+<p><strong>Персонализация</strong>: Система использует данные о поведении пользователей для предоставления персонализированных рекомендаций, что способствует увеличению конверсий и повышению лояльности клиентов.</p>
+</li>
+</ol>
+<h2 id="_3">Часто задаваемые вопросы</h2>
+<h3 id="1-searchbooster">1. Как работает SearchBooster?</h3>
+<p>SearchBooster использует алгоритмы машинного обучения для обработки запросов пользователей и выдачи наиболее релевантных результатов. Система анализирует текстовые запросы, учитывает популярность товаров и применяет различные методы ранжирования для оптимизации выдачи.</p>
+<h3 id="2-searchbooster">2. Какие типы запросов поддерживает SearchBooster?</h3>
+<p>SearchBooster поддерживает текстовые, голосовые и визуальные запросы. Это позволяет пользователям находить товары различными способами, что делает поиск более удобным и доступным.</p>
+<h3 id="3-searchbooster-">3. Как можно интегрировать SearchBooster в мой интернет-магазин?</h3>
+<p>SearchBooster предлагает простую интеграцию с различными платформами и CMS. Для этого необходимо создать проект в админ-панели и следовать инструкциям по настройке API и загрузке товарных фидов.</p>
+<h3 id="4-searchbooster">4. Как я могу настроить фильтры и сортировку в SearchBooster?</h3>
+<p>В админ-панели SearchBooster доступны настройки для фильтров и сортировки. Вы можете настроить отображение товаров по различным параметрам, таким как цена, бренд и наличие на складе.</p>
+<h3 id="5">5. Как я могу анализировать эффективность поиска в моем магазине?</h3>
+<p>SearchBooster предоставляет инструменты для анализа и отчетности. Вы можете интегрировать систему с Яндекс Метрикой для сбора данных о поведении пользователей и эффективности поиска, а также получать регулярные отчеты о качестве выдачи.</p>
+<h3 id="6-searchbooster">6. Как часто обновляется база данных товаров в SearchBooster?</h3>
+<p>Обновление базы данных товаров зависит от настроек вашего интернет-магазина и частоты обновления товарных фидов. Рекомендуется регулярно обновлять фиды, чтобы обеспечить актуальность информации о товарах.</p>
+<h3 id="7-searchbooster">7. Что делать, если я столкнулся с проблемами при использовании SearchBooster?</h3>
+<p>Если у вас возникли проблемы, вы можете обратиться в техническую поддержку через админ-панель или воспользоваться разделом FAQ для поиска ответов на распространенные вопросы.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Iskander, V, 2024
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.525ec568.min.js"></script>
+      
+    
+  </body>
+</html>
